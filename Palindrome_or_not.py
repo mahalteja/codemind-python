@@ -1,0 +1,5 @@
+a=(input().lower())
+b=list(a)
+b.reverse()
+b=''.join(b)
+print(a==b)
