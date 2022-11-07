@@ -1,7 +1,10 @@
 n=int(input())
-a=65
-l=[chr(a+i) for i in range(n)]
+m=1
+s=' '
+l=[(str(i)) for i in range(1,n+1)]
 for i in range(n):
-    for j in range(n):
-        print(l[i],end=' ')
-    print()
+    if n!=i+1:
+        print(s.rjust(n-1-i)+l[i]*m)
+    else:
+        print(l[i]*m)
+    m+=2
